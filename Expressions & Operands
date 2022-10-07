@@ -5,9 +5,40 @@ i=2
 
 #Logical Test:
     # == is used to mean "is equal to", and the output is a TRUE or FALSE answer.
-        i=2
-        i==5
+i=2
+i==5
     # != is used to mean "is NOT equal to" and the output is a TRUE or FALSE answer.
-        i=3
-        i!=4
+i=3
+i!=4
+
+# Branching
+    # IF statement Logic: If statements are like an excclusive nightclub that every condition wants to get into. Only the true ones can gain entrance. 
+        # Hence, IF the statement is true, THEN the program will run. 
+    ##Syntax: 
+    # {
+    #   if (condition):
+    #        print ("What appears if TRUE")
+    #        print ("What appears if FALSE")
+    # }
+
+# first we set age = 19, then define our conditions. 
+age=19
+# note: PAY ATTENTION TO THE INDENTATIONS HERE! A tab/indent is required for the 'print()' commands following the "if:" and "else:" conditions.
+if (age>18):
+    print("You may Enter, kind sir.")#this will run if the variable meedts the first condition.
+else:
+    print ("Back of the line, pal!")
+    #this (AFTER "else:) " will run if the variable does not meet the condition.
+print("It's gonna be a long night, so buckle up.") 
+#this (NOT after "else:") will run regardless of whether any other condition is met, and does not require a tab/indent.
+
+# The "elif: statement (short for "else if") allows us to check additional conditions if the preceding condition is false. If the condition is true, the alternate expressions will be run.
+age=12
+if(age>=19):
+    print("You may attend the AC/DC Showing")
+elif(age==18):
+    print("You can attend Pink Floyd's performance but not AC/DC's performance")
+else:
+    print("You should be in line for the Goofy-Goobers in Concert.")
+print("Okay, move on now. Thank you, next!")
 
