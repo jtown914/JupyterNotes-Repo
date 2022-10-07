@@ -42,3 +42,37 @@ else:
     print("You should be in line for the Goofy-Goobers in Concert.")
 print("Okay, move on now. Thank you, next!")
 
+# Logic Operators
+## This is a poor example, but it technically works (just not intuitively). A better example would be setting a=false. Then using "if not(a=true): print(False)" and vice-versa
+        a = False
+
+        if not a:
+          print('a is false.')
+age=20
+## NOT —> if the input is TRUE, then a "not(TRUE)" statement will output a FALSE result
+if not(age>=21):
+    print("You gotta be 21 to ride that ride, babe!")
+## NOT —> if the input is FALSE, then "not(FALSE)" statement will output a TRUE result
+if not(age<21):
+    print("You can sip some Henny.")
+
+
+
+# An OR statement is only False if *all* the Boolean values are False.... SO if A and B are Booleans (i.e.: if (A condish is true) or (B condish is true): print (TRUE if either A is true, or B is true, or both A and B are true) else: print (FALSE if both A is false and also B is false).
+
+# EXAMPLE of an "OR" Operator Statement:
+album_year=1990
+if(album_year<1980) or (album_year>1989):
+    print("It was made int he '70s or '90s")
+else:
+    print("It was maade in the '80s")
+
+
+# An AND statement is only TRUE if *all* the Boolean values are TRUE.... SO if A and B are Booleans (i.e.: if (A condish is true) and (B condish is true): print (TRUE) since they're both true. Otherwise the result will always be false since at leasrt one (or more) booleans are false
+
+album_year=1983
+if(album_year>1979) and (album_year<1990: #meaning AFTER 1979 *AND ALSO* BEFORE 1990 -> would therefore have to be 1980-1989, and thus is from the '80s
+    print("It's an '80s Classic! You don't know nothin' about that, young blood! This is ~real~ Grown Folks Music")
+else:
+    print ("It's not an '80s era banger.")
+
